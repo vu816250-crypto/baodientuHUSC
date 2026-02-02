@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>HUSC 24h</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        /* ===== HEADER TRÊN ===== */
+        .top-header {
+            background: #ffffff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .top-header .container {
+            width: 1100px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo img {
+            height: 50px; /* 👉 chỉnh logo cao thấp ở đây */
+            margin-right: 12px;
+        }
+
+       .logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-text .site-name {
+    font-size: 34px;
+    font-weight: 800;
+    color: #0033ff;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin-bottom: 6px;
+}
+
+.logo-text .site-slogan {
+    font-size: 14px;
+    color: #777;
+    font-style: italic;
+}
+
+        /* ===== MENU XANH (GIỐNG BÁO 24H) ===== */
+        .menu {
+            background: #0a4dbf;
+        }
+
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 1100px;
+            margin: auto;
+            display: flex;
+        }
+
+        .menu li {
+            padding: 12px 18px;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== NỘI DUNG ===== */
+        .content {
+            width: 1100px;
+            margin: 25px auto;
+            display: flex;
+            gap: 30px;
+            background: #fff;
+            padding: 25px;
+        }
+
+        .main {
+            flex: 3;
+        }
+
+        .sidebar {
+            flex: 1;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .title {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 15px;
+        }
+
+        .summary {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .main img {
+            width: 100%;   /* 👉 ảnh KHÔNG BỊ VỠ */
+            height: auto;
+            margin: 15px 0;
+        }
+.logo {
+    display: flex;          /* 👈 QUAN TRỌNG NHẤT */
+    align-items: center;    /* 👈 căn giữa logo & chữ */
+    gap: 12px;              /* 👈 khoảng cách logo – chữ */
+}
+        .main p {
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: #0a4dbf;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        .footer .container {
+            width: 1100px;
+            margin: auto;
+            padding: 25px 0;
+            font-size: 14px;
+        }
+        .news-image {
+    margin: 20px 0;
+}
+
+.news-image img {
+    width: 100%;
+    height: auto;
+}
+.sidebar {
+    width: 25%;
+    background: #fff;
+    padding: 20px;
+    border-left: 2px solid #0011ff;   /* 👈 ĐƯỜNG DỌC */
+}
+.site-name {
+    font-size: 30px;        /* 👈 TO ra */
+    font-weight: 800;
+    color: #0033ff;         /* 👈 đổi màu chữ */
+    letter-spacing: 1px;   /* 👈 giãn chữ cho giống báo */
+}
+figure figcaption {
+    font-size: 13px;        /* nhỏ chữ */
+    color: rgba(0,0,0,0.55);/* 👈 MỜ */
+    text-align: center;
+    margin-top: 6px;
+    font-style: italic;
+}
+    </style>
+</head>
+
+<body>
+
+<!-- ===== HEADER TRÊN ===== -->
+<div class="top-header">
+    <div class="container">
+       
+        <div class="logo">
+    <img src="images/anhlogo.png" alt="Logo">
+    <div class="logo-text">
+        <span class="site-name">HUSC 24h</span>
+        <span class="site-slogan">Xuân Bính Ngọ 2026</span>
+    </div>
+</div>
+    </div>
+</div>
+
+<!-- ===== MENU XANH NẰM DƯỚI ===== -->
+<div class="menu">
+    <ul>
+        <li><a href="#">🏠 Trang chủ</a></li>
+        <li><a href="#">Thời sự</a></li>
+        <li><a href="#">Giáo dục</a></li>
+        <li><a href="#">Sinh viên</a></li>
+        <li><a href="#">Đời sống</a></li>
+    </ul>
+</div>
+
+<!-- ===== NỘI DUNG BÀI BÁO ===== -->
+<div class="content">
+
+    <div class="main">
+        <div class="title">
+            Tuổi trẻ sinh viên chung tay làm sạch khuôn viên trường
+        </div>
+
+        <div class="meta">
+            Thứ bảy, 31/01/2026 | Truyền thông sinh viên
+        </div>
+
+        <div class="summary">
+            Chung tay xây dựng môi trường xanh – sạch – đẹp chào mừng năm mới.
+        </div>
+
+        <!-- 👉 ẢNH BÀI BÁO -->
+         <figure class="news-image">
+            <img src="images/anh1.jpg">
+            <figcaption></figcaption>
+        </figure>
+        <p>
+           Sáng ngày 31/01/2026, thời tiết se lạnh của những ngày đầu năm, đông đảo đoàn viên, sinh viên Trường Đại học Khoa học, Đại học Huế đã đồng loạt ra quân hưởng ứng phong trào “Chủ nhật xanh” chào mừng năm mới. Hoạt động nhằm phát huy tinh thần xung kích, tình nguyện của tuổi trẻ HUSC trong công tác bảo vệ môi trường, giữ gìn vệ sinh trường lớp và cảnh quan khuôn viên nhà trường.
+        </p>
+
+        <figure>
+            <img src="images/anh2.jpg">
+            <figcaption>(khuôn viên đại học khoa học-đại học huế)
+        </figure>
+
+        <p>
+            Đúng 7h30 toàn bộ sinh viên tập trung trước sân trường chuẩn bị dụng cụ và hô vang khẩu hiệu nâng cao tinh thần sức trẻ của sinh HUSC, trong khuôn khổ của chương trình sinh viên được chia thành nhiều nhóm và được phân công dọn dẹp ở nhiều khu vực khác nhau ưu tiên là các khu vực bồn cây khu vực sân trường Không khí lao động diễn ra sôi nổi, nghiêm túc, thể hiện tinh thần đoàn kết và trách nhiệm của sinh viên trong việc chung tay bảo vệ môi trường học đường.
+
+        <figure>
+            <img src="images/anh3.jpg">
+            <figcaption>(sinh viên thu gom và xử lý lá cây, cỏ khô theo đúng quy định)
+        </figure>
+<figure>
+            <img src="images/anh4.jpg">
+            <figcaption>(sinh viên dọn dẹp vệ sinh khu vực bồn cây trong khuôn viên trường)
+        </figure>
+        <figure>
+            <img src="images/anh5.jpg">
+            <figcaption>(lá cây sau khi thu gom được tập kết lại khuôn viên chờ xử lý)
+        </figure>
+        <p>
+           Hoạt động “Chủ nhật xanh” kết thúc để lại nhiều điều ý nghĩa, không chỉ mang lại diện mạo khang trang, sạch sẽ cho khuôn viên nhà trường mà còn góp phần nâng cao ý thức trách nhiệm của mỗi sinh viên trong việc bảo vệ môi trường sống xung quanh. Thông qua những việc làm cụ thể như thu gom lá cây, dọn dẹp vệ sinh, phân loại và xử lý rác thải hữu cơ, sinh viên Trường Đại học Khoa học – Đại học Huế đã thể hiện tinh thần xung kích, tình nguyện và trách nhiệm với cộng đồng.
+        </p>
+<figure>
+            <img src="images/anh6.jpg">
+            <figcaption>Công tác thu gom rác thải được thực hiện nghiêm túc</figcaption>
+        </figure>
+          <p>
+           Hoạt động này không chỉ là dịp để các bạn sinh viên chung tay xây dựng môi trường học tập xanh – sạch – đẹp, mà còn lan tỏa thông điệp sống xanh, sống có ý thức đến toàn thể cán bộ, giảng viên và sinh viên trong nhà trường. Tin rằng, với những hành động nhỏ nhưng thiết thực hôm nay, phong trào bảo vệ môi trường sẽ ngày càng được nhân rộng, góp phần xây dựng hình ảnh sinh viên HUSC năng động, văn minh và giàu trách nhiệm, hướng tới một năm mới nhiều khởi sắc và phát triển bền vững của nhà trường
+        </p>
+        <div class="author">
+            ✍️ Nguyễn Hoàng Quốc Vũ
+        </div>
+
+    </div>
+    <!-- ===== CỘT PHẢI ===== -->
+    <div class="sidebar">
+        <h3>Tin liên quan</h3>
+        <ul>
+            <li>Sinh viên ra quân ngày Chủ nhật xanh</li>
+            <li>Hoạt động tình nguyện đầu năm</li>
+            <li>Xây dựng môi trường học tập xanh</li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- ===== FOOTER XANH ===== -->
+<div class="footer">
+    <div class="container">
+        <p><b>Liên hệ quảng cáo</b></p>
+        <p>Công ty Truyền thông Sinh viên HUSC</p>
+       <p>Nguyễn Hoàng Quốc Vũ</p>
+       <p>Trần Thị Ngọc Anh</p>
+        <p>Điện thoại: 0968 761 914</p>
+        <p>© 2026 HUSC 24H</p>
+    </div>
+</div>
+
+</body>
+</html>
